@@ -2,9 +2,9 @@
   "name": "@edsoncosta/angular-api-abstraction",
   "version": "1.0.0",
   "description": "Pacote para abstração de consumo de API no Angular",
-  "main": "bundles/edsoncosta-angular-api-abstraction.umd.js",
-  "module": "fesm5/edsoncosta-angular-api-abstraction.js",
-  "es2015": "fesm2015/edsoncosta-angular-api-abstraction.js",
+  "main": "bundles/api-abstraction.umd.js",
+  "module": "fesm5/api-abstraction.js",
+  "es2015": "fesm2015/api-abstraction.js",
   "typings": "edsoncosta-api.d.ts",
   "scripts": {
     "build": "ng-packagr -p ng-package.json"
