@@ -3,5 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "api-abstraction": {
+      "projectType": "library",
+      "root": "projects/api-abstraction",
+      "sourceRoot": "projects/api-abstraction/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/api-abstraction/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/api-abstraction/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/api-abstraction/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/api-abstraction/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
   }
 }
