@@ -1,14 +1,22 @@
 {
   "name": "@edsoncosta/angular-api-abstraction",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Pacote para abstração de consumo de API no Angular",
+  "main": "bundles/meu-pacote-api.umd.js",
+  "module": "fesm5/meu-pacote-api.js",
+  "es2015": "fesm2015/meu-pacote-api.js",
+  "typings": "meu-pacote-api.d.ts",
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json"
+  },
   "peerDependencies": {
-    "@angular/common": "^18.2.0",
-    "@angular/core": "^18.2.0"
+    "@angular/common": "^12.0.0",
+    "@angular/core": "^12.0.0",
+    "rxjs": "^6.5.5"
   },
+  "author": "Edson Costa",
+  "license": "MIT",
   "dependencies": {
-    "@edsoncosta/angular-api-abstraction": "file:",
-    "api-abstraction": "file:",
-    "tslib": "^2.3.0"
-  },
-  "sideEffects": false
+    "@edsoncosta/angular-api-abstraction": "file:"
+  }
 }
