@@ -1,6 +1,6 @@
 {
   "name": "@edsoncosta/angular-api-abstraction",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pacote para abstração de consumo de API no Angular",
   "main": "bundles/api-abstraction.umd.js",
   "module": "fesm5/api-abstraction.js",
